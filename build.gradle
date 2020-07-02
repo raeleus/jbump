@@ -23,6 +23,7 @@ allprojects {
         google()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -54,5 +55,6 @@ project(":test") {
         api "com.badlogicgames.gdx:gdx:1.9.10"
         api "com.badlogicgames.gdx:gdx-backend-lwjgl3:1.9.10"
         api "com.badlogicgames.gdx:gdx-platform:1.9.10:natives-desktop"
+        implementation "space.earlygrey:shapedrawer:2.3.0"
     }
 }
