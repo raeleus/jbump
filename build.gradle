@@ -50,6 +50,9 @@ project(":test") {
     apply plugin: "java-library"
 
     dependencies {
-        compile project(":jbump")
+        implementation project(":jbump")
+        api "com.badlogicgames.gdx:gdx:1.9.10"
+        api "com.badlogicgames.gdx:gdx-backend-lwjgl3:1.9.10"
+        api "com.badlogicgames.gdx:gdx-platform:1.9.10:natives-desktop"
     }
 }
